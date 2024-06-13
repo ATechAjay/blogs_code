@@ -1,0 +1,7 @@
+- Added content into the placeholders
+- Design the content inside the placeholders
+- Added video as background ( grid-row: 2/3; grid-column: 1/3;)
+- Make it responsive to the video element
+- Fix the left side ( grid-row: 2/3; grid-column: 1/2; z-index: 8;)
+- Design the left part of the hero section
+- Make it responsive if you want

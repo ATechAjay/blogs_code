@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>For-in loop</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background: #333;
+        color: #fff;
+        font-family: sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      table,
+      th,
+      td {
+        border: 1px solid rgb(255, 255, 255);
+        padding: 5px;
+      }
+
+      table {
+        border-collapse: collapse;
+        margin: 20px auto;
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Fetching user data from the remote server...</h1>
+    <hr />
+    <div class="root"></div>
+    <table>
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Name</th>
+          <th>Address</th>
+        </tr>
+      </thead>
+      <tbody class="dynamic">
+        <!-- <tr">
+                <td>dummy</td>
+                <td>dummy</td>
+                <td>dummy</td>
+              </tr> -->
+      </tbody>
+    </table>
+    <script>
+      //   for (key in object) {
+      //     // code to be executed
+      //   }
+
+      const user = { name: "Ajay", Add: "Patna", PhNo: "+91 432423432" };
+
+      for (const key in user) {
+        console.log(key); //Returns the property name of the object.
+        console.log(user[key]); //Returns the values of the object's properties.
+      }
+
+      const userData = [
+        { id: 111, user: "Ajay", userAddress: "Patna" },
+        { id: 212, user: "Pranav", userAddress: "Banglore" },
+        { id: 113, user: "Anas", userAddress: "Delhi" },
+      ];
+
+      //   for (const key in userData) {
+      //     console.log(key); //Returns the index of objects
+      //     console.log(userData[key]); // Returns all object from the array
+      //     console.log(userData); //Returns the actual object or array that is being iterated.
+      //   }
+      let data = "";
+      for (const key in userData) {
+        data += ` <tr>
+          <td>${userData[key].id}</td>
+          <td>${userData[key].user}</td>
+          <td>${userData[key].userAddress}</td>
+        </tr>`;
+      }
+
+      document
+        .querySelector(".dynamic")
+        .insertAdjacentHTML("beforebegin", data);
+    </script>
+  </body>
+</html>

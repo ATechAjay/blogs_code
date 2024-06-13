@@ -1,0 +1,14 @@
+.element {
+  mask-size: contain | cover;
+  mask-size: <width>; //height will be set automatically.
+  mask-size: <width> <height>;
+}
+
+.element {
+  mask-clip: content-box | padding-box | border-box | margin-box | no-clip |
+    fill-box | stroke-box | view-box;
+}
+
+.element {
+  mask-origin: content-box | padding-box | border-box | margin-box;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masking!</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        /* background: darkmagenta; */
+      }
+
+      .container {
+        height: 100vh;
+        width: 100vw;
+        background-image: url("../image/lap.jpg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        mask-image: url("../image/aj.png");
+        mask-size: contain;
+        mask-repeat: no-repeat;
+        mask-position: center;
+
+        -webkit-mask-image: url("../image/aj.png");
+        -webkit-mask-size: contain;
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-position: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container"></div>
+  </body>
+</html>

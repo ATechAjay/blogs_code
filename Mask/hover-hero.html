@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .alpha-target {
+        -webkit-mask-image: url(https://i7x7p5b7.stackpathcdn.com/codrops/wp-content/uploads/2014/10/mask-image.png);
+        -webkit-mask-repeat: no-repeat;
+        -webkit-mask-size: 90%;
+      }
+
+      .nav ul {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+        margin-left: -20px;
+      }
+
+      .nav ul li {
+        font-size: 16px;
+        padding: 0 20px;
+      }
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        padding: 20px 50px;
+      }
+
+      .headline {
+        left: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">Logo</div>
+      <div class="toggle-bars">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <div class="nav">
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="row">
+      <div
+        class="d-sm-flex col-md-12 align-items-center justify-content-between"
+        style="height: 80vh"
+      >
+        <div class="col-md-6 mx-auto mb-4 headline">
+          <h1 class="mb-4 font-weight-bold">
+            Explore the <span style="color: #0000ff">Future</span>
+          </h1>
+          <a
+            href="#"
+            class="btn px-5 py-3 text-white mt-3 mt-sm-0"
+            style="border-radius: 30px; background-color: #0000ff"
+            >Explore More</a
+          >
+        </div>
+        <img
+          class="alpha-target"
+          src="https://w0.peakpx.com/wallpaper/936/399/HD-wallpaper-logic-circuit-computer-cpu-tech-technology.jpg"
+          alt="Masked image"
+          width="1000"
+        />
+      </div>
+    </div>
+  </body>
+</html>
