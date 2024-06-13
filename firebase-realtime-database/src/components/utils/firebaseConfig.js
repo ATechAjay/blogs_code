@@ -2,14 +2,14 @@ import { initializeApp } from "firebase/app";
 import { getDatabase, ref } from "firebase/database";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyAIAi6TcarHdfDNUHjzfJlf_8-I1-gXNHA",
-  authDomain: "talent500-project.firebaseapp.com",
+  apiKey: "AIzaSyAIAi6TcfssdfdarHdfDNUHjzfJlf_8-I1-gXNHA",
+  authDomain: "talent500-sdfproject.firebaseapp.com",
   databaseURL:
-    "https://talent500-project-default-rtdb.asia-southeast1.firebasedatabase.app",
-  projectId: "talent500-project",
-  storageBucket: "talent500-project.appspot.com",
-  messagingSenderId: "634173582725",
-  appId: "1:634173582725:web:ab91ed3f003ae6788a28ec",
+    "https://talent500-project-default-rtfddb.asia-southeast1.firebasedatabase.app",
+  projectId: "talent500-prsdfoject",
+  storageBucket: "talent500-prfsdoject.appspot.com",
+  messagingSenderId: "6341735fds82725",
+  appId: "1:634173582725:web:ab91ed3dsf003ae6788a28ec",
 };
 
 // Firebase configuration
