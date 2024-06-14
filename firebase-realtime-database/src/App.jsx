@@ -11,6 +11,7 @@ function App() {
   // console.log(list);
 
   useEffect(() => {
+    // Get data from the database
     onValue(dbRef, function (snapshot) {
       const data = snapshot.val();
       // console.log(data);
